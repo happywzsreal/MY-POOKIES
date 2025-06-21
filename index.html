@@ -6,18 +6,18 @@
   <title>My best friends</title>
   <style>
     body {
-      background: linear-gradient(135deg, #ffffff, #a29ff1, #a29ff1, #ffffff);
+      background: linear-gradient(135deg, #5e4b8b, #8e7cc3, #8e7cc3, #5e4b8b);
       font-family: 'Futura', sans-serif;
       margin: 0;
       padding: 0;
-      color: #ffffff;
+      color: #e1dfff;
       text-align: center;
       overflow-x: hidden;
     }
     .enter-screen {
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #ffffff, #a29ff1, #a29ff1, #ffffff);
+      background: linear-gradient(135deg, #5e4b8b, #8e7cc3, #8e7cc3, #5e4b8b);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,15 +25,15 @@
       cursor: pointer;
       font-size: 3rem;
       font-family: 'Futura', sans-serif;
-      color: white;
+      color: #e1dfff;
       text-transform: lowercase;
       transition: transform 0.2s ease, text-shadow 0.2s ease;
       user-select: none;
-      text-shadow: 0 0 8px #fff, 0 0 15px #fff;
+      text-shadow: 0 0 10px #b89fff, 0 0 20px #b89fff;
     }
     .enter-screen:hover {
       transform: scale(1.05);
-      text-shadow: 0 0 12px #fff, 0 0 20px #fff;
+      text-shadow: 0 0 14px #d4bfff, 0 0 30px #d4bfff;
     }
     .enter-screen:active {
       transform: scale(0.95);
@@ -48,8 +48,8 @@
       font-size: 2.8em;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #ffffff;
-      text-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
+      color: #d9caff;
+      text-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
       margin-bottom: 10px;
       user-select: none;
     }
@@ -61,30 +61,30 @@
       margin-top: 30px;
     }
     .friend-card {
-      background: rgba(255 255 255 / 0.2);
+      background: rgba(140 95 220 / 0.25);
       border-radius: 12px;
       padding: 15px;
       max-width: 260px;
       width: 100%;
       backdrop-filter: blur(10px);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      color: white;
+      color: #e1dfff;
       user-select: none;
-      box-shadow: 0 0 10px #fff, 0 0 25px #fff;
+      box-shadow: 0 0 12px #b89fff, 0 0 30px #b89fff;
     }
     .friend-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 14px #fff, 0 0 40px #fff;
+      box-shadow: 0 0 20px #d4bfff, 0 0 50px #d4bfff;
     }
     .friend-header h2 {
       margin: 0;
       font-size: 1.5em;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      color: #f0e6ff;
+      text-shadow: 2px 2px 5px rgba(60, 45, 120, 0.7);
     }
     .friend-body p {
       font-size: 1.1em;
-      color: #ffffff;
+      color: #e1dfff;
       user-select: none;
     }
     .player {
@@ -99,8 +99,8 @@
       margin-bottom: 10px;
       text-transform: lowercase;
       font-weight: 600;
-      color: white;
-      text-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
+      color: #d9caff;
+      text-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
       user-select: none;
     }
     .volume-btn {
@@ -109,17 +109,17 @@
       transition: transform 0.2s ease, text-shadow 0.2s ease;
       font-family: 'Futura', sans-serif;
       font-size: 1.1rem;
-      color: white;
+      color: #d9caff;
       text-transform: lowercase;
       background: none;
       border: none;
       outline: none;
       user-select: none;
-      text-shadow: 0 0 6px #a29ff1, 0 0 12px #a29ff1;
+      text-shadow: 0 0 8px #a685e2, 0 0 20px #a685e2;
     }
     .volume-btn:hover {
       transform: scale(1.1);
-      text-shadow: 0 0 10px #a29ff1, 0 0 20px #a29ff1;
+      text-shadow: 0 0 15px #c9b6ff, 0 0 30px #c9b6ff;
     }
     .volume-btn:active {
       transform: scale(0.95);
@@ -138,51 +138,51 @@
     .progress::-webkit-slider-runnable-track {
       width: 100%;
       height: 8px;
-      background: #a29ff1;
+      background: #8e7cc3;
       border-radius: 6px;
-      box-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
+      box-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
     }
     .progress::-moz-range-track {
       width: 100%;
       height: 8px;
-      background: #a29ff1;
+      background: #8e7cc3;
       border-radius: 6px;
-      box-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
+      box-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
     }
     .progress::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 18px;
       height: 18px;
-      background: #a29ff1;
+      background: #a685e2;
       border-radius: 50%;
       cursor: pointer;
-      box-shadow: 0 0 10px #a29ff1, 0 0 25px #a29ff1;
+      box-shadow: 0 0 15px #c9b6ff, 0 0 35px #c9b6ff;
       margin-top: -5px;
       transition: box-shadow 0.2s ease;
     }
     .progress::-webkit-slider-thumb:hover {
-      box-shadow: 0 0 15px #a29ff1, 0 0 30px #a29ff1;
+      box-shadow: 0 0 20px #d4bfff, 0 0 45px #d4bfff;
     }
     .progress::-moz-range-thumb {
       width: 18px;
       height: 18px;
-      background: #a29ff1;
+      background: #a685e2;
       border-radius: 50%;
       cursor: pointer;
-      box-shadow: 0 0 10px #a29ff1, 0 0 25px #a29ff1;
+      box-shadow: 0 0 15px #c9b6ff, 0 0 35px #c9b6ff;
       transition: box-shadow 0.2s ease;
     }
     .progress::-moz-range-thumb:hover {
-      box-shadow: 0 0 15px #a29ff1, 0 0 30px #a29ff1;
+      box-shadow: 0 0 20px #d4bfff, 0 0 45px #d4bfff;
     }
     .time {
       margin-top: 4px;
       font-size: 0.9em;
       font-family: 'Futura', sans-serif;
       user-select: none;
-      color: white;
-      text-shadow: 0 0 6px #a29ff1, 0 0 15px #a29ff1;
+      color: #d9caff;
+      text-shadow: 0 0 10px #a685e2, 0 0 30px #a685e2;
     }
     @media (max-width: 768px) {
       h1 {
