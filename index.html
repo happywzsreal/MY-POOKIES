@@ -6,21 +6,20 @@
   <title>My best friends</title>
   <style>
     body {
-      background: linear-gradient(135deg, #5e4b8b, #8e7cc3, #8e7cc3, #5e4b8b);
+      background: linear-gradient(135deg, #ffffff, #a29ff1, #a29ff1, #ffffff);
       font-family: 'Futura', sans-serif;
       margin: 0;
       padding: 0;
-      color: #e1dfff;
+      color: #ffffff;
       text-align: center;
       overflow-x: hidden;
       position: relative;
       min-height: 100vh;
-      padding-bottom: 30px; /* space for footer */
     }
     .enter-screen {
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #5e4b8b, #8e7cc3, #8e7cc3, #5e4b8b);
+      background: linear-gradient(135deg, #ffffff, #a29ff1, #a29ff1, #ffffff);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,15 +27,15 @@
       cursor: pointer;
       font-size: 3rem;
       font-family: 'Futura', sans-serif;
-      color: #e1dfff;
+      color: white;
       text-transform: lowercase;
       transition: transform 0.2s ease, text-shadow 0.2s ease;
       user-select: none;
-      text-shadow: 0 0 10px #b89fff, 0 0 20px #b89fff;
+      text-shadow: 0 0 8px #fff, 0 0 15px #fff;
     }
     .enter-screen:hover {
       transform: scale(1.05);
-      text-shadow: 0 0 14px #d4bfff, 0 0 30px #d4bfff;
+      text-shadow: 0 0 12px #fff, 0 0 20px #fff;
     }
     .enter-screen:active {
       transform: scale(0.95);
@@ -51,8 +50,8 @@
       font-size: 2.8em;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #d9caff;
-      text-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
+      color: #ffffff;
+      text-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
       margin-bottom: 10px;
       user-select: none;
     }
@@ -64,30 +63,30 @@
       margin-top: 30px;
     }
     .friend-card {
-      background: rgba(140 95 220 / 0.25);
+      background: rgba(255 255 255 / 0.2);
       border-radius: 12px;
       padding: 15px;
       max-width: 260px;
       width: 100%;
       backdrop-filter: blur(10px);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      color: #e1dfff;
+      color: white;
       user-select: none;
-      box-shadow: 0 0 12px #b89fff, 0 0 30px #b89fff;
+      box-shadow: 0 0 10px #fff, 0 0 25px #fff;
     }
     .friend-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 20px #d4bfff, 0 0 50px #d4bfff;
+      box-shadow: 0 0 14px #fff, 0 0 40px #fff;
     }
     .friend-header h2 {
       margin: 0;
       font-size: 1.5em;
-      color: #f0e6ff;
-      text-shadow: 2px 2px 5px rgba(60, 45, 120, 0.7);
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
     .friend-body p {
       font-size: 1.1em;
-      color: #e1dfff;
+      color: #ffffff;
       user-select: none;
     }
     .player {
@@ -102,8 +101,8 @@
       margin-bottom: 10px;
       text-transform: lowercase;
       font-weight: 600;
-      color: #d9caff;
-      text-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
+      color: white;
+      text-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
       user-select: none;
     }
     .volume-btn {
@@ -112,17 +111,17 @@
       transition: transform 0.2s ease, text-shadow 0.2s ease;
       font-family: 'Futura', sans-serif;
       font-size: 1.1rem;
-      color: #d9caff;
+      color: white;
       text-transform: lowercase;
       background: none;
       border: none;
       outline: none;
       user-select: none;
-      text-shadow: 0 0 8px #a685e2, 0 0 20px #a685e2;
+      text-shadow: 0 0 6px #a29ff1, 0 0 12px #a29ff1;
     }
     .volume-btn:hover {
       transform: scale(1.1);
-      text-shadow: 0 0 15px #c9b6ff, 0 0 30px #c9b6ff;
+      text-shadow: 0 0 10px #a29ff1, 0 0 20px #a29ff1;
     }
     .volume-btn:active {
       transform: scale(0.95);
@@ -141,62 +140,64 @@
     .progress::-webkit-slider-runnable-track {
       width: 100%;
       height: 8px;
-      background: #8e7cc3;
+      background: #a29ff1;
       border-radius: 6px;
-      box-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
+      box-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
     }
     .progress::-moz-range-track {
       width: 100%;
       height: 8px;
-      background: #8e7cc3;
+      background: #a29ff1;
       border-radius: 6px;
-      box-shadow: 0 0 12px #a685e2, 0 0 30px #a685e2;
+      box-shadow: 0 0 8px #a29ff1, 0 0 20px #a29ff1;
     }
     .progress::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 18px;
       height: 18px;
-      background: #a685e2;
+      background: #a29ff1;
       border-radius: 50%;
       cursor: pointer;
-      box-shadow: 0 0 15px #c9b6ff, 0 0 35px #c9b6ff;
+      box-shadow: 0 0 10px #a29ff1, 0 0 25px #a29ff1;
       margin-top: -5px;
       transition: box-shadow 0.2s ease;
     }
     .progress::-webkit-slider-thumb:hover {
-      box-shadow: 0 0 20px #d4bfff, 0 0 45px #d4bfff;
+      box-shadow: 0 0 15px #a29ff1, 0 0 30px #a29ff1;
     }
     .progress::-moz-range-thumb {
       width: 18px;
       height: 18px;
-      background: #a685e2;
+      background: #a29ff1;
       border-radius: 50%;
       cursor: pointer;
-      box-shadow: 0 0 15px #c9b6ff, 0 0 35px #c9b6ff;
+      box-shadow: 0 0 10px #a29ff1, 0 0 25px #a29ff1;
       transition: box-shadow 0.2s ease;
     }
     .progress::-moz-range-thumb:hover {
-      box-shadow: 0 0 20px #d4bfff, 0 0 45px #d4bfff;
+      box-shadow: 0 0 15px #a29ff1, 0 0 30px #a29ff1;
     }
     .time {
       margin-top: 4px;
       font-size: 0.9em;
       font-family: 'Futura', sans-serif;
       user-select: none;
-      color: #d9caff;
-      text-shadow: 0 0 10px #a685e2, 0 0 30px #a685e2;
+      color: white;
+      text-shadow: 0 0 6px #a29ff1, 0 0 15px #a29ff1;
     }
-    .footer-text {
+    /* Watermark style */
+    .watermark {
       position: fixed;
-      bottom: 5px;
-      left: 10px;
-      font-size: 0.85rem;
-      color: #c4b4ffcc;
+      bottom: 10px;
+      right: 15px;
       font-family: 'Futura', sans-serif;
+      font-size: 0.85rem;
+      color: rgba(255 255 255 / 0.4);
       user-select: none;
-      text-shadow: 0 0 6px #9a7fffaa;
-      pointer-events: none; /* so it doesn't interfere with clicks */
+      pointer-events: none;
+      text-shadow: 0 0 5px rgba(162, 159, 241, 0.7);
+      z-index: 10000;
     }
     @media (max-width: 768px) {
       h1 {
@@ -241,7 +242,9 @@
       </div>
     </div>
   </div>
-  <div class="footer-text">Made By Chair (application.quit)</div>
+
+  <div class="watermark">made by happy_wzs &amp; chair</div>
+
   <script>
     const songs = [
       { url: "https://raw.githubusercontent.com/killgoat2/songs-im-fat/main/Rock%20N%20Roll.mp3", name: "rock n roll" }
@@ -257,24 +260,27 @@
     let isMuted = false;
     let currentSongIndex = -1;
     let progressUpdateRequest;
+
     function formatTime(seconds) {
       const mins = Math.floor(seconds / 60);
       const secs = Math.floor(seconds % 60);
       return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
     }
+
     function loadSong(index) {
       currentSongIndex = index;
       audio.src = songs[index].url;
       audio.load();
       songTitle.textContent = songs[index].name;
       progress.value = 0;
-      timeDisplay.textContent = `0:00 - 0:00`;
+      timeDisplay.textContent = "0:00 - 0:00";
     }
+
     function updateProgress() {
       if (!audio.duration) {
         progress.max = 100;
         progress.value = 0;
-        timeDisplay.textContent = `0:00 - 0:00`;
+        timeDisplay.textContent = "0:00 - 0:00";
         progressUpdateRequest = requestAnimationFrame(updateProgress);
         return;
       }
@@ -283,24 +289,29 @@
       timeDisplay.textContent = `${formatTime(audio.currentTime)} - ${formatTime(audio.duration)}`;
       progressUpdateRequest = requestAnimationFrame(updateProgress);
     }
+
     progress.addEventListener("input", () => {
       audio.currentTime = progress.value;
       updateProgress();
     });
+
     volumeBtn.addEventListener("click", () => {
       isMuted = !isMuted;
       audio.muted = isMuted;
       volumeBtn.textContent = isMuted ? "unmute" : "mute";
     });
+
     audio.addEventListener("play", () => {
       if (!progressUpdateRequest) updateProgress();
     });
+
     audio.addEventListener("pause", () => {
       if (progressUpdateRequest) {
         cancelAnimationFrame(progressUpdateRequest);
         progressUpdateRequest = null;
       }
     });
+
     function startMusic() {
       enterScreen.style.display = "none";
       mainContent.style.display = "block";
